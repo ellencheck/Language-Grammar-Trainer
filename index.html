@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Grammar Trainer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 900px;
+    }
+
+    h1 { font-size: 2.7rem; margin-bottom: 10px; }
+    p { opacity: 0.9; margin-bottom: 40px; font-size: 1.1rem; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 240px);
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.18);
+      border-radius: 22px;
+      padding: 30px 20px;
+      backdrop-filter: blur(12px);
+      cursor: pointer;
+      transition: 0.35s ease;
+      text-decoration: none;
+      color: white;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card:hover {
+      transform: translateY(-12px) scale(1.06);
+      background: rgba(255, 255, 255, 0.28);
+    }
+
+    .title { font-size: 1.3rem; margin-bottom: 8px; }
+    .level { font-size: 0.85rem; opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>🌍 Language Grammar Trainer</h1>
+  <p>Learn four languages through an interactive grammar trainer.<br>
+     Build your skills step by step from Beginner to A2.</p>
+
+  <div class="grid">
+    <a class="card" href="https://ellencheck.github.io/Russian-Grammar-Trainer/" target="_blank">
+      <div class="title">Russian</div>
+      <div class="level">A0 → A2</div>
+    </a>
+
+    <a class="card" href="https://ellencheck.github.io/Italian-Grammar-Trainer/" target="_blank">
+      <div class="title">Italian</div>
+      <div class="level">A0 → A2</div>
+    </a>
+
+    <a class="card" href="#" target="_blank">
+      <div class="title">English</div>
+      <div class="level">A0 → A2</div>
+    </a>
+
+    <a class="card" href="#" target="_blank">
+      <div class="title">Spanish</div>
+      <div class="level">A0 → A2</div>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
